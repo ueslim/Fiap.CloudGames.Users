@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "KHX+pEamux/KCWwg2ZsQKbR7Sf6BQSZMFMApWDTPgRw=",
+  "Source": "FIAP.CloudGames.Customer.API",
+  "BasePath": "_content/FIAP.CloudGames.Customer.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
