@@ -9,7 +9,6 @@
       "FIAP.CloudGames.Customer.API/1.0.0": {
         "dependencies": {
           "FIAP.CloudGames.Core": "1.0.0",
-          "FIAP.CloudGames.MessageBus": "1.0.0",
           "FIAP.CloudGames.WebAPI.Core": "1.0.0",
           "MediatR": "13.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.9",
@@ -50,7 +49,7 @@
           "Azure.Core": "1.38.0",
           "Microsoft.Identity.Client": "4.61.3",
           "Microsoft.Identity.Client.Extensions.Msal": "4.61.3",
-          "System.Memory": "4.5.5",
+          "System.Memory": "4.5.4",
           "System.Security.Cryptography.ProtectedData": "8.0.0",
           "System.Text.Json": "9.0.9",
           "System.Threading.Tasks.Extensions": "4.5.4"
@@ -59,29 +58,6 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
-          }
-        }
-      },
-      "EasyNetQ/7.8.0": {
-        "dependencies": {
-          "RabbitMQ.Client": "6.8.1"
-        },
-        "runtime": {
-          "lib/netstandard2.0/EasyNetQ.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.8.0.0"
-          }
-        }
-      },
-      "EasyNetQ.Serialization.NewtonsoftJson/7.8.0": {
-        "dependencies": {
-          "EasyNetQ": "7.8.0",
-          "Newtonsoft.Json": "13.0.4"
-        },
-        "runtime": {
-          "lib/netstandard2.0/EasyNetQ.Serialization.NewtonsoftJson.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.8.0.0"
           }
         }
       },
@@ -1549,7 +1525,7 @@
       "Microsoft.Extensions.Http.Polly/8.0.5": {
         "dependencies": {
           "Microsoft.Extensions.Http": "8.0.0",
-          "Polly": "8.6.3",
+          "Polly": "7.2.4",
           "Polly.Extensions.Http": "3.0.0"
         },
         "runtime": {
@@ -2193,45 +2169,22 @@
           }
         }
       },
-      "Polly/8.6.3": {
-        "dependencies": {
-          "Polly.Core": "8.6.3"
-        },
+      "Polly/7.2.4": {
         "runtime": {
-          "lib/net6.0/Polly.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.6.3.4893"
-          }
-        }
-      },
-      "Polly.Core/8.6.3": {
-        "runtime": {
-          "lib/net8.0/Polly.Core.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.6.3.4893"
+          "lib/netstandard2.0/Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.4.982"
           }
         }
       },
       "Polly.Extensions.Http/3.0.0": {
         "dependencies": {
-          "Polly": "8.6.3"
+          "Polly": "7.2.4"
         },
         "runtime": {
           "lib/netstandard2.0/Polly.Extensions.Http.dll": {
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.0.0"
-          }
-        }
-      },
-      "RabbitMQ.Client/6.8.1": {
-        "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Threading.Channels": "7.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.8.1.0"
           }
         }
       },
@@ -2538,7 +2491,7 @@
           }
         }
       },
-      "System.Memory/4.5.5": {},
+      "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
           "System.Text.Encodings.Web": "9.0.9",
@@ -2668,21 +2621,6 @@
           }
         }
       },
-      "FIAP.CloudGames.MessageBus/1.0.0": {
-        "dependencies": {
-          "EasyNetQ": "7.8.0",
-          "EasyNetQ.Serialization.NewtonsoftJson": "7.8.0",
-          "FIAP.CloudGames.Core": "1.0.0",
-          "Newtonsoft.Json": "13.0.4",
-          "Polly": "8.6.3"
-        },
-        "runtime": {
-          "FIAP.CloudGames.MessageBus.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "FIAP.CloudGames.WebAPI.Core/1.0.0": {
         "dependencies": {
           "FIAP.CloudGames.Core": "1.0.0",
@@ -2719,20 +2657,6 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
-    },
-    "EasyNetQ/7.8.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Qo+OoVkQMsN/LU/0QtKZF+bt8W0G5gd3OUibxluWQhWA2bqmapS9R+Hvb3hpQ5JV+TaiJyxM43ZkmnhOLm9r0g==",
-      "path": "easynetq/7.8.0",
-      "hashPath": "easynetq.7.8.0.nupkg.sha512"
-    },
-    "EasyNetQ.Serialization.NewtonsoftJson/7.8.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tQCLbT5DbEVDr7obAIlcscNUHro3vlU7r5f0I0up9VPm2dJfr6hVrGOz8c1lroC30DaizwmWPKA6vPNCvPfQUA==",
-      "path": "easynetq.serialization.newtonsoftjson/7.8.0",
-      "hashPath": "easynetq.serialization.newtonsoftjson.7.8.0.nupkg.sha512"
     },
     "FluentValidation/12.0.0": {
       "type": "package",
@@ -3763,19 +3687,12 @@
       "path": "opentelemetry.instrumentation.runtime/1.8.1",
       "hashPath": "opentelemetry.instrumentation.runtime.1.8.1.nupkg.sha512"
     },
-    "Polly/8.6.3": {
+    "Polly/7.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8X6mWAGDrgTHyqDthifiv9QGR+FgnRe13/sPhSR4ZbhXCqUDJuLrVqunB39LLbf87TXZ+06dMdopd6LpY4oK0w==",
-      "path": "polly/8.6.3",
-      "hashPath": "polly.8.6.3.nupkg.sha512"
-    },
-    "Polly.Core/8.6.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xRlcE+1FidqIfZ7zxBT6klSblJ/7MAJq1x5yvYoLnwNhs8Xc2gp3Srf8wHG2NpFxVBqrldc3svhkMPJjSzTmzw==",
-      "path": "polly.core/8.6.3",
-      "hashPath": "polly.core.8.6.3.nupkg.sha512"
+      "sha512": "sha512-bw00Ck5sh6ekduDE3mnCo1ohzuad946uslCDEENu3091+6UKnBuKLo4e+yaNcCzXxOZCXWY2gV4a35+K1d4LDA==",
+      "path": "polly/7.2.4",
+      "hashPath": "polly.7.2.4.nupkg.sha512"
     },
     "Polly.Extensions.Http/3.0.0": {
       "type": "package",
@@ -3783,13 +3700,6 @@
       "sha512": "sha512-drrG+hB3pYFY7w1c3BD+lSGYvH2oIclH8GRSehgfyP5kjnFnHKQuuBhuHLv+PWyFuaTDyk/vfRpnxOzd11+J8g==",
       "path": "polly.extensions.http/3.0.0",
       "hashPath": "polly.extensions.http.3.0.0.nupkg.sha512"
-    },
-    "RabbitMQ.Client/6.8.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-jNsmGgmCNw2S/NzskeN2ijtGywtH4Sk/G6jWUTD5sY9SrC27Xz6BsLIiB8hdsfjeyWCa4j4GvCIGkpE8wrjU1Q==",
-      "path": "rabbitmq.client/6.8.1",
-      "hashPath": "rabbitmq.client.6.8.1.nupkg.sha512"
     },
     "Serilog/4.2.0": {
       "type": "package",
@@ -4008,12 +3918,12 @@
       "path": "system.io.pipelines/9.0.9",
       "hashPath": "system.io.pipelines.9.0.9.nupkg.sha512"
     },
-    "System.Memory/4.5.5": {
+    "System.Memory/4.5.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
-      "path": "system.memory/4.5.5",
-      "hashPath": "system.memory.4.5.5.nupkg.sha512"
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
     },
     "System.Memory.Data/1.0.2": {
       "type": "package",
@@ -4128,11 +4038,6 @@
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "FIAP.CloudGames.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "FIAP.CloudGames.MessageBus/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

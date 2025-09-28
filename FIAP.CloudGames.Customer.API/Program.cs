@@ -16,7 +16,6 @@ if (builder.Environment.IsDevelopment())
 
 builder.Services.AddApiConfiguration(builder.Configuration);
 
-builder.Services.AddMessageBusConfiguration(builder.Configuration);
 
 builder.Services.AddJwtConfiguration(builder.Configuration);
 

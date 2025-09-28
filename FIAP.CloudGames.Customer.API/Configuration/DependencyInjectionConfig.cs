@@ -5,6 +5,7 @@ using FIAP.CloudGames.Customer.API.Application.Events;
 using FIAP.CloudGames.Customer.API.Data;
 using FIAP.CloudGames.Customer.API.Data.Repository;
 using FIAP.CloudGames.Customer.API.Models;
+using FIAP.CloudGames.Customer.API.Services;
 using FIAP.CloudGames.WebAPI.Core.User;
 using FluentValidation.Results;
 using MediatR;
@@ -28,6 +29,15 @@ namespace FIAP.CloudGames.Customer.API.Configuration
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<CustomerContext>();
             services.AddSingleton<IEventStore, NoOpEventStore>();
+
+            // HTTP Services
+            services.AddHttpClient<IUserService, UserService>((serviceProvider, client) =>
+            {
+                var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+                var baseUrl = configuration["Services:UserApi:BaseUrl"];
+                client.BaseAddress = new Uri(baseUrl ?? "https://user-api.example.com");
+                client.DefaultRequestHeaders.Add("Accept", "application/json");
+            });
         }
     }
 }

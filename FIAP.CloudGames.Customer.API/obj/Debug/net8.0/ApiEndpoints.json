@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "FIAP.CloudGames.Customer.API.Controllers.CustomerController",
+    "Method": "GetAddress",
+    "RelativePath": "customer/address",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FIAP.CloudGames.Customer.API.Controllers.CustomerController",
+    "Method": "AddAddress",
+    "RelativePath": "customer/address",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "address",
+        "Type": "FIAP.CloudGames.Customer.API.Application.Commands.AddAddressCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
