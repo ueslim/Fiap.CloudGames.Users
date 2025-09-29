@@ -1,0 +1,336 @@
+# =================================
+# .NET / ASP.NET Core .gitignore
+# =================================
+# This file prevents temporary, build, and IDE-specific files 
+# from being versioned, keeping only relevant source code.
+
+# =================================
+# VISUAL STUDIO FILES & FOLDERS
+# =================================
+# Visual Studio solution and project files (temporary)
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2019+ specific files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# =================================
+# BUILD OUTPUTS & OBJEKTE
+# =================================
+# Build artifact directories
+bin/
+obj/
+out/
+build/
+target/
+
+# Framework-specific build outputs
+[Bb]in/
+[Oo bj]/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio temporary files
+*.tmp
+*.temp
+*.userprefs
+*.userprefs
+
+# Compiled binary files
+*.dll
+*.pdb
+*.exe
+*.so
+*.dylib
+*.cache
+*.ilk
+*.iobj
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+
+# =================================
+# LOG FILES
+# =================================
+# Application logs
+*.log
+logs/
+[Ll]ogs/
+
+# Build logs
+build.log
+*.build.log
+
+# Exception logs
+exceptions.log
+error.log
+
+# =================================
+# NUGET PACKAGES & ARTIFACTS
+# =================================
+# NuGet v3's project.json files produces more ignorable files
+*.nupkg
+*.snupkg
+
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target
+!**/[Pp]ackages/build/
+!**/[Pp]ackages/proofread.txt
+
+# Uncomment if necessary however generally it is regenerated when needed
+#!**/[Pp]ackages/repositories.config
+
+# NuGet cache
+.nuget/
+*.nuget.props
+*.nuget.targets
+project.assets.json
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# .NET Core
+!**/.nuget/[Pp]ackages/*/build/
+**/.nuget/!(build/)/
+
+# =================================
+# LOCAL CONFIGURATION FILES
+# =================================
+# Environment-specific settings (keep appsettings.json but ignore dev/staging)
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+
+# Launch settings (IDE-specific)
+Properties/launchSettings.json
+launchSettings.json
+
+# User secrets
+secrets.json
+UserSecrets/
+
+# Connection strings (if stored locally)
+*connectionStrings.json
+
+# =================================
+# IDE FILES
+# =================================
+# JetBrains IDEs (Rider)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim/Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =================================
+# OPERATING SYSTEM FILES
+# =================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =================================
+# TESTING & COVERAGE
+# =================================
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Coverage reports
+coverage*.json
+coverage*.xml
+coverage*.info
+*.coverage
+*.lcov
+
+# Test results
+*.trx
+TestResults/
+
+# =================================
+# MISCELLANEOUS
+# =================================
+# Azure Stream Analytics local run output
+ASALocalRun/
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# NVidia Nsight GPU debugger configuration file
+*.nvuser
+
+# MFractors (Xamarin productivity tool) working folder
+.mfractor/
+
+# Local History for Visual Studio Code
+.history/
+
+# Beat That Load of Test
+blt/
+
+# Azure Artifacts T3 environment
+*_t3
+
+# Azure Storage Emulator (Windows)
+azurite/
+
+# Azure Function keys
+local.settings.json
+
+# Ruler
+.ruler
+
+# BizTalk build output
+*.btp.cs
+
+# BizTalk log files
+*.log
+
+# BizTalk test artifacts
+scratch
+
+# Microsoft Fakes
+FakesAssemblies/
+
+# GhostDoc plugin setting file
+*.GhostDoc.xml
+
+# Node.js Tools for Visual Studio
+.ntvs_analysis.dat
+node_modules/
+
+# Visual Studio 6 build log
+*.plg
+
+# Visual Studio 6 workspace options file
+*.opt
+
+# Visual Studio LightSwitch build output
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
+
+# Paket dependency manager
+.paket/paket.exe
+paket-files/
+
+# FAKE - F# Make
+.fake/
+
+# CodeRush personal settings
+.cr/personal
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# Cake - Uncomment if you are using it
+# tools/**
+# !tools/packages.config
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# =================================
+# END OF .GITIGNORE
+# =================================
