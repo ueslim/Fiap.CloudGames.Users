@@ -8,8 +8,6 @@ C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\b
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\FIAP.CloudGames.Customer.API.pdb
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Azure.Identity.dll
-C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\EasyNetQ.dll
-C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\EasyNetQ.Serialization.NewtonsoftJson.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Google.Protobuf.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Grpc.Core.Api.dll
@@ -100,9 +98,7 @@ C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\b
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\OpenTelemetry.Instrumentation.Http.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\OpenTelemetry.Instrumentation.Runtime.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Polly.dll
-C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Polly.Core.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Polly.Extensions.Http.dll
-C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Serilog.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\Serilog.Enrichers.Span.dll
@@ -296,10 +292,8 @@ C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\b
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\FIAP.CloudGames.Core.dll
-C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\FIAP.CloudGames.MessageBus.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\FIAP.CloudGames.WebAPI.Core.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\FIAP.CloudGames.Core.pdb
-C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\FIAP.CloudGames.MessageBus.pdb
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\bin\Debug\net8.0\FIAP.CloudGames.WebAPI.Core.pdb
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\FIAP.CloudGames.Customer.API.csproj.AssemblyReference.cache
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\FIAP.CloudGames.Customer.API.GeneratedMSBuildEditorConfig.editorconfig
@@ -319,10 +313,10 @@ C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\o
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FIAP.CloudGames.Customer.API.props
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FIAP.CloudGames.Customer.API.props
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\FIAP.Clo.F220E209.Up2Date
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\FIAP.CloudGames.Customer.API.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\refint\FIAP.CloudGames.Customer.API.dll
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\FIAP.CloudGames.Customer.API.pdb
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\FIAP.CloudGames.Customer.API.genruntimeconfig.cache
 C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\ref\FIAP.CloudGames.Customer.API.dll
+C:\Users\wesle\source\repos\Fiap.CloudGames.Users\FIAP.CloudGames.Customer.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

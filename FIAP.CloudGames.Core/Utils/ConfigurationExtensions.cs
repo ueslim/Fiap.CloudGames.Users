@@ -4,9 +4,7 @@ namespace FIAP.CloudGames.Core.Utils
 {
     public static class ConfigurationExtensions
     {
-        public static string GetMessageQueueConnection(this IConfiguration configuration, string name)
-        {
-            return configuration?.GetSection("MessageQueueConnection")?[name];
-        }
+        // TODO: RabbitMQ message queue configuration methods have been removed.
+        // Consider implementing Azure Service Bus configuration methods if needed.
     }
 }
