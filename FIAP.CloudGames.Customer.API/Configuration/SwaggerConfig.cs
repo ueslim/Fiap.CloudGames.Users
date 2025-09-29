@@ -20,13 +20,7 @@ namespace FIAP.CloudGames.Customer.API.Configuration
                 });
 
                 // Ensure OpenAPI 3.0.1 format for Azure API Management compatibility
-                c.UseOneOfForPolymorphisms();
-                c.UseAllOfForInheritance();
-                c.UseInlineDefinitionsForEnums();
-                
-                // Configure to exclude problematic OpenAPI 3.1 features that cause Azure API Management validation errors
-                c.SupportNonNullableReferenceTypes = false;
-                c.CustomSchemaIds(type => type.FriendlyId(true));
+                c.CustomSchemaIds(type => type.Name.Replace("[]", "Array"));
                 
                 // Ensure nullable types are handled correctly for OpenAPI 3.0.1
                 c.SchemaFilter<MakeNullableSchemaFilter>();
