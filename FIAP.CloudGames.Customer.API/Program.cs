@@ -16,7 +16,8 @@ if (builder.Environment.IsDevelopment())
 
 builder.Services.AddApiConfiguration(builder.Configuration);
 
-builder.Services.AddMessageBusConfiguration(builder.Configuration);
+// TODO: RabbitMQ message bus integration has been removed. 
+// Consider implementing Azure Service Bus or another messaging solution if needed.
 
 builder.Services.AddJwtConfiguration(builder.Configuration);
 

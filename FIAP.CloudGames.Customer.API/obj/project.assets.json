@@ -47,39 +47,6 @@
           }
         }
       },
-      "EasyNetQ/7.8.0": {
-        "type": "package",
-        "dependencies": {
-          "RabbitMQ.Client": "6.8.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/EasyNetQ.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/EasyNetQ.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "EasyNetQ.Serialization.NewtonsoftJson/7.8.0": {
-        "type": "package",
-        "dependencies": {
-          "EasyNetQ": "7.8.0",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/EasyNetQ.Serialization.NewtonsoftJson.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/EasyNetQ.Serialization.NewtonsoftJson.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
       "FluentValidation/12.0.0": {
         "type": "package",
         "compile": {
@@ -2755,31 +2722,15 @@
           }
         }
       },
-      "Polly/8.6.3": {
+      "Polly/7.2.4": {
         "type": "package",
-        "dependencies": {
-          "Polly.Core": "8.6.3"
-        },
         "compile": {
-          "lib/net6.0/Polly.dll": {
+          "lib/netstandard2.0/Polly.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Polly.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Polly.Core/8.6.3": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Polly.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Polly.Core.dll": {
+          "lib/netstandard2.0/Polly.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -2796,23 +2747,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Polly.Extensions.Http.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "RabbitMQ.Client/6.8.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Threading.Channels": "7.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {
             "related": ".xml"
           }
         }
@@ -3351,7 +3285,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Memory/4.5.5": {
+      "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -3686,23 +3620,6 @@
           "bin/placeholder/FIAP.CloudGames.Core.dll": {}
         }
       },
-      "FIAP.CloudGames.MessageBus/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "EasyNetQ": "7.8.0",
-          "EasyNetQ.Serialization.NewtonsoftJson": "7.8.0",
-          "FIAP.CloudGames.Core": "1.0.0",
-          "Newtonsoft.Json": "13.0.4",
-          "Polly": "8.6.3"
-        },
-        "compile": {
-          "bin/placeholder/FIAP.CloudGames.MessageBus.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FIAP.CloudGames.MessageBus.dll": {}
-        }
-      },
       "FIAP.CloudGames.WebAPI.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3762,38 +3679,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "EasyNetQ/7.8.0": {
-      "sha512": "Qo+OoVkQMsN/LU/0QtKZF+bt8W0G5gd3OUibxluWQhWA2bqmapS9R+Hvb3hpQ5JV+TaiJyxM43ZkmnhOLm9r0g==",
-      "type": "package",
-      "path": "easynetq/7.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "EasyNetQ.png",
-        "easynetq.7.8.0.nupkg.sha512",
-        "easynetq.nuspec",
-        "lib/netstandard2.0/EasyNetQ.dll",
-        "lib/netstandard2.0/EasyNetQ.pdb",
-        "lib/netstandard2.0/EasyNetQ.xml",
-        "licence.txt"
-      ]
-    },
-    "EasyNetQ.Serialization.NewtonsoftJson/7.8.0": {
-      "sha512": "tQCLbT5DbEVDr7obAIlcscNUHro3vlU7r5f0I0up9VPm2dJfr6hVrGOz8c1lroC30DaizwmWPKA6vPNCvPfQUA==",
-      "type": "package",
-      "path": "easynetq.serialization.newtonsoftjson/7.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "EasyNetQ.png",
-        "easynetq.serialization.newtonsoftjson.7.8.0.nupkg.sha512",
-        "easynetq.serialization.newtonsoftjson.nuspec",
-        "lib/netstandard2.0/EasyNetQ.Serialization.NewtonsoftJson.dll",
-        "lib/netstandard2.0/EasyNetQ.Serialization.NewtonsoftJson.pdb",
-        "lib/netstandard2.0/EasyNetQ.Serialization.NewtonsoftJson.xml",
-        "licence.txt"
       ]
     },
     "FluentValidation/12.0.0": {
@@ -8239,59 +8124,29 @@
         "opentelemetry.instrumentation.runtime.nuspec"
       ]
     },
-    "Polly/8.6.3": {
-      "sha512": "8X6mWAGDrgTHyqDthifiv9QGR+FgnRe13/sPhSR4ZbhXCqUDJuLrVqunB39LLbf87TXZ+06dMdopd6LpY4oK0w==",
+    "Polly/7.2.4": {
+      "sha512": "bw00Ck5sh6ekduDE3mnCo1ohzuad946uslCDEENu3091+6UKnBuKLo4e+yaNcCzXxOZCXWY2gV4a35+K1d4LDA==",
       "type": "package",
-      "path": "polly/8.6.3",
+      "path": "polly/7.2.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE",
-        "lib/net462/Polly.dll",
-        "lib/net462/Polly.pdb",
-        "lib/net462/Polly.xml",
+        "README.md",
+        "lib/net461/Polly.dll",
+        "lib/net461/Polly.pdb",
+        "lib/net461/Polly.xml",
         "lib/net472/Polly.dll",
         "lib/net472/Polly.pdb",
         "lib/net472/Polly.xml",
-        "lib/net6.0/Polly.dll",
-        "lib/net6.0/Polly.pdb",
-        "lib/net6.0/Polly.xml",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
         "lib/netstandard2.0/Polly.dll",
         "lib/netstandard2.0/Polly.pdb",
         "lib/netstandard2.0/Polly.xml",
         "package-icon.png",
-        "package-readme.md",
-        "polly.8.6.3.nupkg.sha512",
+        "polly.7.2.4.nupkg.sha512",
         "polly.nuspec"
-      ]
-    },
-    "Polly.Core/8.6.3": {
-      "sha512": "xRlcE+1FidqIfZ7zxBT6klSblJ/7MAJq1x5yvYoLnwNhs8Xc2gp3Srf8wHG2NpFxVBqrldc3svhkMPJjSzTmzw==",
-      "type": "package",
-      "path": "polly.core/8.6.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "lib/net462/Polly.Core.dll",
-        "lib/net462/Polly.Core.pdb",
-        "lib/net462/Polly.Core.xml",
-        "lib/net472/Polly.Core.dll",
-        "lib/net472/Polly.Core.pdb",
-        "lib/net472/Polly.Core.xml",
-        "lib/net6.0/Polly.Core.dll",
-        "lib/net6.0/Polly.Core.pdb",
-        "lib/net6.0/Polly.Core.xml",
-        "lib/net8.0/Polly.Core.dll",
-        "lib/net8.0/Polly.Core.pdb",
-        "lib/net8.0/Polly.Core.xml",
-        "lib/netstandard2.0/Polly.Core.dll",
-        "lib/netstandard2.0/Polly.Core.pdb",
-        "lib/netstandard2.0/Polly.Core.xml",
-        "package-icon.png",
-        "package-readme.md",
-        "polly.core.8.6.3.nupkg.sha512",
-        "polly.core.nuspec"
       ]
     },
     "Polly.Extensions.Http/3.0.0": {
@@ -8307,23 +8162,6 @@
         "lib/netstandard2.0/Polly.Extensions.Http.xml",
         "polly.extensions.http.3.0.0.nupkg.sha512",
         "polly.extensions.http.nuspec"
-      ]
-    },
-    "RabbitMQ.Client/6.8.1": {
-      "sha512": "jNsmGgmCNw2S/NzskeN2ijtGywtH4Sk/G6jWUTD5sY9SrC27Xz6BsLIiB8hdsfjeyWCa4j4GvCIGkpE8wrjU1Q==",
-      "type": "package",
-      "path": "rabbitmq.client/6.8.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "icon.png",
-        "lib/net462/RabbitMQ.Client.dll",
-        "lib/net462/RabbitMQ.Client.xml",
-        "lib/netstandard2.0/RabbitMQ.Client.dll",
-        "lib/netstandard2.0/RabbitMQ.Client.xml",
-        "rabbitmq.client.6.8.1.nupkg.sha512",
-        "rabbitmq.client.nuspec"
       ]
     },
     "Serilog/4.2.0": {
@@ -9103,10 +8941,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Memory/4.5.5": {
-      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
-      "path": "system.memory/4.5.5",
+      "path": "system.memory/4.5.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9120,7 +8958,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.4.5.4.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -9766,11 +9604,6 @@
       "path": "../FIAP.CloudGames.Core/FIAP.CloudGames.Core.csproj",
       "msbuildProject": "../FIAP.CloudGames.Core/FIAP.CloudGames.Core.csproj"
     },
-    "FIAP.CloudGames.MessageBus/1.0.0": {
-      "type": "project",
-      "path": "../FIAP.CloudGames.MessageBus/FIAP.CloudGames.MessageBus.csproj",
-      "msbuildProject": "../FIAP.CloudGames.MessageBus/FIAP.CloudGames.MessageBus.csproj"
-    },
     "FIAP.CloudGames.WebAPI.Core/1.0.0": {
       "type": "project",
       "path": "../FIAP.CloudGames.WebAPI.Core/FIAP.CloudGames.WebAPI.Core.csproj",
@@ -9780,7 +9613,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "FIAP.CloudGames.Core >= 1.0.0",
-      "FIAP.CloudGames.MessageBus >= 1.0.0",
       "FIAP.CloudGames.WebAPI.Core >= 1.0.0",
       "MediatR >= 13.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.9",
@@ -9829,9 +9661,6 @@
           "projectReferences": {
             "C:\\Users\\wesle\\source\\repos\\Fiap.CloudGames.Users\\FIAP.CloudGames.Core\\FIAP.CloudGames.Core.csproj": {
               "projectPath": "C:\\Users\\wesle\\source\\repos\\Fiap.CloudGames.Users\\FIAP.CloudGames.Core\\FIAP.CloudGames.Core.csproj"
-            },
-            "C:\\Users\\wesle\\source\\repos\\Fiap.CloudGames.Users\\FIAP.CloudGames.MessageBus\\FIAP.CloudGames.MessageBus.csproj": {
-              "projectPath": "C:\\Users\\wesle\\source\\repos\\Fiap.CloudGames.Users\\FIAP.CloudGames.MessageBus\\FIAP.CloudGames.MessageBus.csproj"
             },
             "C:\\Users\\wesle\\source\\repos\\Fiap.CloudGames.Users\\FIAP.CloudGames.WebAPI.Core\\FIAP.CloudGames.WebAPI.Core.csproj": {
               "projectPath": "C:\\Users\\wesle\\source\\repos\\Fiap.CloudGames.Users\\FIAP.CloudGames.WebAPI.Core\\FIAP.CloudGames.WebAPI.Core.csproj"
