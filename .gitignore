@@ -1,228 +1,34 @@
-# =================================
-# .NET / ASP.NET Core .gitignore
-# =================================
-# This file prevents temporary, build, and IDE-specific files 
-# from being versioned, keeping only relevant source code.
+# .gitignore for .NET/ASP.NET Core Projects
 
-# =================================
-# VISUAL STUDIO FILES & FOLDERS
-# =================================
-# Visual Studio solution and project files (temporary)
+# Visual Studio folders and files
+.vs/                          # Visual Studio cache and settings folder
+*.user                        # User-specific settings for Visual Studio
+*.suo                         # Visual Studio solution user options
+*.userosscache               # Visual Studio cache files
+*.sln.docstates             # Visual Studio document states
+
+# Build results
+bin/                         # Compiled binary files
+obj/                         # Object files and intermediate files
+out/                         # Output folder
+[Dd]ebug/                    # Debug build output
+[Dd]ebugPublic/             # Debug public files
+[Rr]elease/                 # Release build output
+[Rr]eleases/                # Release folder
+x64/                        # 64-bit build output
+x86/                        # 32-bit build output
+[Ww][Ii][Nn]32/             # Windows 32-bit build output
+[Aa][Rr][Mm]/               # ARM build output
+[Aa][Rr][Mm]64/             # ARM 64-bit build output
+bld/                        # Build directories
+[Bb]in/                     # Binaries
+[Oo]bj/                     # Object files
+[Ll]og/                     # Logs
+[Ll]ogs/                    # Logs folder
+
+# Visual Studio 2015/2017 cache/options directory
 .vs/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
 
-# Visual Studio 2019+ specific files
-.vscode/settings.json
-.vscode/launch.json
-.vscode/extensions.json
-
-# =================================
-# BUILD OUTPUTS & OBJEKTE
-# =================================
-# Build artifact directories
-bin/
-obj/
-out/
-build/
-target/
-
-# Framework-specific build outputs
-[Bb]in/
-[Oo bj]/
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Ll]og/
-[Ll]ogs/
-
-# Visual Studio temporary files
-*.tmp
-*.temp
-*.userprefs
-*.userprefs
-
-# Compiled binary files
-*.dll
-*.pdb
-*.exe
-*.so
-*.dylib
-*.cache
-*.ilk
-*.iobj
-*.ipdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp_proj
-*_wpftmp.csproj
-*.log
-*.vspscc
-*.vssscc
-
-# =================================
-# LOG FILES
-# =================================
-# Application logs
-*.log
-logs/
-[Ll]ogs/
-
-# Build logs
-build.log
-*.build.log
-
-# Exception logs
-exceptions.log
-error.log
-
-# =================================
-# NUGET PACKAGES & ARTIFACTS
-# =================================
-# NuGet v3's project.json files produces more ignorable files
-*.nupkg
-*.snupkg
-
-# The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
-# except build/, which is used as an MSBuild target
-!**/[Pp]ackages/build/
-!**/[Pp]ackages/proofread.txt
-
-# Uncomment if necessary however generally it is regenerated when needed
-#!**/[Pp]ackages/repositories.config
-
-# NuGet cache
-.nuget/
-*.nuget.props
-*.nuget.targets
-project.assets.json
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# .NET Core
-!**/.nuget/[Pp]ackages/*/build/
-**/.nuget/!(build/)/
-
-# =================================
-# LOCAL CONFIGURATION FILES
-# =================================
-# Environment-specific settings (keep appsettings.json but ignore dev/staging)
-appsettings.Development.json
-appsettings.Staging.json
-appsettings.Production.json
-
-# Launch settings (IDE-specific)
-Properties/launchSettings.json
-launchSettings.json
-
-# User secrets
-secrets.json
-UserSecrets/
-
-# Connection strings (if stored locally)
-*connectionStrings.json
-
-# =================================
-# IDE FILES
-# =================================
-# JetBrains IDEs (Rider)
-.idea/
-*.iml
-*.ipr
-*.iws
-
-# Visual Studio Code
-.vscode/
-.vscode/settings.json
-.vscode/tasks.json
-.vscode/launch.json
-.vscode/extensions.json
-.vscode/*.code-workspace
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Vim/Neovim
-*.swp
-*.swo
-*~
-.netrwhist
-Session.vim
-
-# Emacs
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
-
-# =================================
-# OPERATING SYSTEM FILES
-# =================================
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-*.stackdump
-[Dd]esktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-*.lnk
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Linux
-*~
-.fuse_hidden*
-.directory
-.Trash-*
-.nfs*
-
-# =================================
-# TESTING & COVERAGE
-# =================================
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
@@ -232,58 +38,279 @@ Temporary Items
 TestResult.xml
 nunit-*.xml
 
-# Coverage reports
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
+project.lock.json           # Package lock file (NuGet 2.x+)
+project.fragment.lock.json  # Package lock file fragments
+artifacts/                  # NuGet artifacts folder
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Chutzpah Test files
+_Chutzpah*
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Trace Files
+*.e2e
+
+# TFS 2012 Local Workspace
+$tf/
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JustCode is a .NET coding addin-in
+.JustCode
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# AxoCover is a Code Coverage Tool
+.axoCover/*
+!.axoCover/settings.json
+
+# Coverlet is a free, cross platform Code Coverage Tool
 coverage*.json
 coverage*.xml
 coverage*.info
+
+# Visual Studio code coverage results
 *.coverage
-*.lcov
+*.coveragexml
 
-# Test results
-*.trx
-TestResults/
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
 
-# =================================
-# MISCELLANEOUS
-# =================================
-# Azure Stream Analytics local run output
-ASALocalRun/
+# MightyMoose
+*.mm.*
+AutoTest.Net/
 
-# MSBuild Binary and Structured Log
-*.binlog
+# Web workbench (sass)
+.sass-cache/
 
-# NVidia Nsight GPU debugger configuration file
-*.nvuser
+# Installshield output folder
+[Ee]xpress/
 
-# MFractors (Xamarin productivity tool) working folder
-.mfractor/
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+# Note: Comment the next line if you want to checkin your web deploy settings,
+# but database connection strings (with potential passwords) will be unencrypted
+*.pubxml
+*.publishproj
+
+# Microsoft Azure Web App publish settings. Comment the next line if you want to
+# checkin your Azure Web App publish settings, but sensitive information contained
+# in these files may be visible
+*.azurePubxml
+
+# Microsoft Azure Build Output
+csx/
+*.build.csdef
+
+# Microsoft Azure Emulator
+ecf/
+rcf/
+
+# Windows Store app package directory
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+*.appxbundle
+*.appxupload
+
+# Visual Studio cache files
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono auto generated files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
 
 # Local History for Visual Studio Code
 .history/
 
-# Beat That Load of Test
-blt/
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
 
-# Azure Artifacts T3 environment
-*_t3
+# Folder config file
+[Dd]esktop.ini
 
-# Azure Storage Emulator (Windows)
-azurite/
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Azure Function keys
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# Log files
+*.log
+logs/
+*.log.*
+
+# Package files (keep packages.config)
+*.nupkg
+*.snupkg
+packages/
+!packages/repositories.config
+
+# Local configuration files
+appsettings.*.json
+!appsettings.json
+!appsettings.*.Production.json
+launchSettings.json
+
+# User secrets (ASP.NET Core)
+secrets.json
+appsettings.Development.json
+
+# Azure Functions localsettings file
 local.settings.json
 
-# Ruler
-.ruler
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
 
-# BizTalk build output
-*.btp.cs
-
-# BizTalk log files
-*.log
-
-# BizTalk test artifacts
-scratch
+# Business Intelligence projects
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+*.rptproj.rsuser
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -301,6 +328,9 @@ node_modules/
 # Visual Studio 6 workspace options file
 *.opt
 
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+*.vbw
+
 # Visual Studio LightSwitch build output
 **/*.HTMLClient/GeneratedArtifacts
 **/*.DesktopClient/GeneratedArtifacts
@@ -316,6 +346,10 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
+# JetBrains Rider
+.idea/
+*.sln.iml
+
 # CodeRush personal settings
 .cr/personal
 
@@ -327,10 +361,51 @@ __pycache__/
 # tools/**
 # !tools/packages.config
 
-# JetBrains Rider
-.idea/
-*.sln.iml
+# Tabs Studio
+*.tss
 
-# =================================
-# END OF .GITIGNORE
-# =================================
+# Telerik's JustMock configuration file
+*.jmconfig
+
+# BizTalk build output
+*.btp.cs
+*.btm.cs
+*.odx.cs
+*.xsd.cs
+
+# OpenCover UI coverage tool report
+OpenCover/
+
+# Azure Stream Analytics local run output
+ASALocalRun/
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# NVidia Nsight GPU debugger configuration file
+*.nvuser
+
+# MFractors (Xamarin productivity tool) working folder
+.mfractor/
+
+# Local History for Visual Studio
+.localhistory/
+
+# BeatPulse healthcheck temp database
+healthchecksdb
+
+# Backup folder for Package Reference Convert tool in Visual Studio 2017
+MigrationBackup/
+
+# Ionide (cross platform F# VS Code tools) working folder
+.ionide/
+
+# Fody - auto-generated XML schemas
+FodyWeavers.xsd
+
+##
+## Visual Studio temporary files, build results, and
+## files generated by popular Visual Studio add-ons.
+##
+## Documentation files should not be ignored.
+##
