@@ -11,7 +11,8 @@ namespace FIAP.CloudGames.Customer.API.Configuration
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "FIAP Cloud Games Customer API",
+                    Title = "Customer API",
+                    Version = "v1",
                     Description = "This API is part of the FIAP Cloud Games Application.",
                     Contact = new OpenApiContact { Name = "FIAP GAMES", Email = "example@gmail.com" },
                     License = new OpenApiLicense { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
@@ -46,7 +47,8 @@ namespace FIAP.CloudGames.Customer.API.Configuration
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Customer API v1");
+                c.RoutePrefix = "swagger";
             });
         }
     }
