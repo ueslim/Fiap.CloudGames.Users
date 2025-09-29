@@ -8,6 +8,9 @@ namespace FIAP.CloudGames.Customer.API.Configuration
     {
         public static void AddSwaggerConfiguration(this IServiceCollection services)
         {
+            // Necessário para expor os endpoints no Swagger
+            services.AddEndpointsApiExplorer();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -15,16 +18,19 @@ namespace FIAP.CloudGames.Customer.API.Configuration
                     Title = "Customer API",
                     Version = "v1",
                     Description = "This API is part of the FIAP Cloud Games Application.",
-                    Contact = new OpenApiContact { Name = "FIAP GAMES", Email = "example@gmail.com" },
-                    License = new OpenApiLicense { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
+                    Contact = new OpenApiContact
+                    {
+                        Name = "FIAP GAMES",
+                        Email = "example@gmail.com"
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "MIT",
+                        Url = new Uri("https://opensource.org/licenses/MIT")
+                    }
                 });
 
-                // Ensure OpenAPI 3.0.1 format for Azure API Management compatibility
-                c.CustomSchemaIds(type => type.Name.Replace("[]", "Array"));
-                
-                // Ensure nullable types are handled correctly for OpenAPI 3.0.1
-                c.SchemaFilter<MakeNullableSchemaFilter>();
-
+                // Definição de segurança JWT
                 var securityScheme = new OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -41,7 +47,6 @@ namespace FIAP.CloudGames.Customer.API.Configuration
                 };
 
                 c.AddSecurityDefinition(securityScheme.Reference.Id, securityScheme);
-
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     { securityScheme, Array.Empty<string>() }
@@ -54,28 +59,12 @@ namespace FIAP.CloudGames.Customer.API.Configuration
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
+                // JSON cru em /swagger/v1/swagger.json
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Customer API v1");
+
+                // UI em /swagger/index.html
                 c.RoutePrefix = "swagger";
             });
-        }
-    }
-
-    /// <summary>
-    /// Schema filter to ensure nullable properties are marked correctly for OpenAPI 3.0.1
-    /// </summary>
-    public class MakeNullableSchemaFilter : ISchemaFilter
-    {
-        public void Apply(OpenApiSchema schema, SchemaFilterContext context)
-        {
-            // Ensure proper nullable handling for OpenAPI 3.0.1 compatibility
-            if (context.Type.IsGenericType && context.Type.GetGenericTypeDefinition() == typeof(Nullable<>))
-            {
-                schema.Nullable = true;
-            }
-            else if (context.Type == typeof(string) || context.Type == typeof(DateTime) || context.Type == typeof(DateTime?))
-            {
-                schema.Nullable = false;
-            }
         }
     }
 }
