@@ -4,34 +4,48 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  workflow_dispatch: # Permite rodar manualmente também
 
 env:
-  AZURE_WEBAPP_NAME: app-fiapcloudgames-users-api
-  SOLUTION_FILE_PATH: Fiap.CloudGames.Users.sln
+  AZURE_WEBAPP_NAME: app-fiapcloudgames-users-api   # Nome do App Service
+  SOLUTION_FILE_PATH: Fiap.CloudGames.Users.sln     # Caminho para o .sln
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Copia o código do seu repositório para a máquina virtual do pipeline
       - name: 'Checkout repo'
         uses: actions/checkout@v4
 
+      # 2. Configura o ambiente .NET na máquina virtual
       - name: 'Setup .NET'
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
 
+      # 3. Restaura as dependências do projeto (pacotes NuGet)
       - name: 'Restore dependencies'
         run: dotnet restore ${{ env.SOLUTION_FILE_PATH }}
 
-      - name: 'Publish project'
-        run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration Release --output './publish'
+      # 4. Compila o projeto
+      - name: 'Build project'
+        run: dotnet build ${{ env.SOLUTION_FILE_PATH }} --configuration Release --no-restore
 
+      # 5. Publica o projeto (gera os arquivos prontos para o deploy)
+      - name: 'Publish project'
+        run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration Release --no-build --output './publish'
+
+      # 6. Faz o login no Azure de forma segura usando um "secret"
+      - name: 'Login to Azure'
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # 7. Faz o deploy dos arquivos publicados para o Azure App Service
       - name: 'Deploy to Azure App Service'
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: './publish'
